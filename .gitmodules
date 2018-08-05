@@ -1,0 +1,3 @@
+[submodule "wordpress-to-markdown"]
+	path = wordpress-to-markdown
+	url = git@github.com:DengYiping/wordpress-to-markdown.git
