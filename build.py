@@ -28,7 +28,7 @@ for key in input_file_dict:
 
     with open(os.path.join(INPUT_FOLDER, fname), 'r') as f:
         md_str = f.read()
-    
+
     post = {
         'title': key,
         'date': time.strftime('%Y-%m-%d %H:%M'),
@@ -41,5 +41,5 @@ for key in input_file_dict:
     with open(os.path.join(OUTPUT_FOLDER, output_key + '.json'), 'w') as f:
         f.write(json.dumps(post))
 
-with open(os.path.join(OUTPUT_FOLDER, 'posts.json'), 'w') as f:
+with open(os.path.join(OUTPUT_FOLDER, 'blogs.json'), 'w') as f:
     f.write(json.dumps(rst))
